@@ -91,8 +91,13 @@ header nav ul li {
 }
 /* Hero style end */
 
+/* About me style */
 .about {
     text-align: center;
+}
+
+.about div {
+    margin-bottom: 20px;
 }
 .about p {
     line-height: 1.5;
@@ -101,11 +106,52 @@ header nav ul li {
     margin: 0 auto;
     font-size: 20px;
 }
+/* about me style end */
 
+/* ideal adventures style */
+.adventures {
+    text-align: center;
+    background: #264653;
+    padding-bottom: 20px;
+}
+
+.adventures h2 {
+    color: #e76f51;
+}
+
+.adventures div {
+    margin-bottom: 25px;
+}
+
+.adventures img {
+    width: 15%;
+    margin: 5px 0;
+}
+
+.adventures h3 {
+    color: #e76f51;
+    font-size: 30px;
+    margin: 10px 0;
+    font-weight: lighter;
+}
+
+.adventures p {
+    color: #2a9d8f;
+    font-size: 20px;
+    width: 60%;
+    display: inline-block;
+    line-height: 1.5;
+}
+
+.adventures span {
+    font-size: 25px;
+}
+
+/* utility classes */
 .section-title {
     font-size: 45px;
+    font-weight: lighter;
     color: #264653;
-    background-color: #ffffff;
     margin-bottom: 35px;
     padding: 20px 100px 20px 100px;
     display: inline-block;
@@ -117,7 +163,7 @@ header nav ul li {
 }
 
 .secondary-border {
-    border-color: #264653;
+    border-color: #2a9d8f;
 }
 
 
