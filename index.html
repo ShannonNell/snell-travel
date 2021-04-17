@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>snell Travels</title>
+    <title>snellTravels</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="./assets/images/snellSnail-white.png">
 </head>
 
 <body>
 <!-- Navigation -->
     <header>
         <h1>
-            <a href="/">snellTravels</a>
+            <a href="/"> <img src="./assets/images/snellSnail-orange.png" alt=""/>snellTravels</a>
         </h1>
         <nav>
             <ul>
@@ -24,6 +25,9 @@
                 </li>
                 <li>
                     <a href="#places-ive-been">Places I've Been</a>
+                </li>
+                <li>
+                    <a href="#current-location">Currently Located</a>
                 </li>
             </ul>
         </nav>
@@ -63,7 +67,14 @@
         <div>
             <h2 class="section-title primary-border">About Me</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis recusandae fuga eum optio a vitae maiores, voluptatem eveniet hic delectus, esse, veritatis porro sapiente debitis.
+                Aloha! Shannon is the name and travelling is the game. 
+                Unfortunately right now, the travel game is not afoot -dang COVID. 
+                But you can bet your bottom dollar that tomorrow, there'll be travel.
+                And as soon as I can, I'll be there. 
+                <br />
+                Iceland. Vancouver. Oregon. New Zealand. Faroe Islands. Zhangjiajie's Mountains. 
+
+                Is everywhere an option?
             </p>
         </div>
     </section>
@@ -76,7 +87,9 @@
             <img src="./assets/images/Surfer.svg" alt="surfer" />
             <h3>Surfing: <span>wherever there's water</span></h3>
             <p>
-                Surfing is a passion of mine. Or it would be if I lived by the ocean. For now I'm just a wannabe surfer and if I ever get the chance, I take it.
+                Surfing is a passion of mine. 
+                Or it would be if I lived by the ocean. 
+                For now I'm just a wannabe surfer and if I ever get the chance, I take it.
             </p>
         </div>
 
@@ -84,7 +97,9 @@
             <img src="./assets/images/Hiker.svg" alt="hiker" />
             <h3>Hiking: <span>coastal mountains preferably</span></h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptas reprehenderit dolor, ullam in sunt ipsum eaque autem neque repellendus a dolores, non debitis nulla?
+                I used to hate hiking but have finally come to appreciate it. 
+                Having a camera and seeing the beauty of the world through a new 'lens' helped me appreciate it all the more. 
+                But maybe don't ask me to hike all day without access to some sort of waterfront.
             </p>
         </div>
 
@@ -92,60 +107,68 @@
             <img src="./assets/images/helicopter1.svg" alt="touring" />
             <h3>Tours: <span>boating, helicoptor rides, city walks</span></h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ea quod quidem exercitationem deleniti suscipit veritatis totam sequi? Fuga neque, quod recusandae obcaecati ducimus vitae.
+                Tours have their ups and downs but I choose to focus on the good! 
+                Sometimes the tourguide is simply a great resource of information.
+                Other times they take you to remote locations you wouldn't be able to access on your own.
+                They teach you things, and if you can get a good group, it can be a blast!
             </p>
         </div>
     </section>
 
 <!-- "Places I've Been" section -->
-    <section id="places-ive-been">
-        <h2>Places I've Been</h2>
+    <section id="places-ive-been" class="places-been">
+        <h2 class="section-title primary-border">Places I've Been</h2>
         
         <!-- place one -->
-        <article>
-            <img src="" alt="" />
-            <div>
+        <article class="places">
+            <img src="./assets/images/2019_07_September_Portugal79.jpg" alt="Coastal view of Lagos beach, Portugal" />
+            <div class="places-bio text-left">
                 <h3>Portugal</h3>
                 <h4>Lisbon, Lagos, Sintra</h4>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae iusto soluta fugiat iste consequatur perspiciatis laboriosam animi laudantium, temporibus corrupti accusantium at nisi, non unde ratione odit minima molestiae illo tempore ab dignissimos perferendis. Magnam veritatis fugit iste debitis porro doloremque incidunt. Similique veritatis praesentium culpa id officiis facilis maxime.
+                    Ah Portugal. Coastal views, warm days, and many castles. What more could someone want? 
                 </p>
             </div>  
         </article>
 
         <!-- place two -->
-        <article>
-            <div>
+        <article class="places">
+            <div class="places-bio text-right">
                 <h3>Spain</h3>
                 <h4>Malaga, Ronda, Caminito del Rey</h4>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quisquam corrupti voluptates est ducimus, magnam, veritatis enim incidunt fuga provident ex cumque aperiam ullam libero natus assumenda accusamus consectetur asperiores eveniet autem. Inventore error, odit cupiditate, eius ut aliquid recusandae numquam officia asperiores reprehenderit illo nihil mollitia placeat ipsam vero?
+                    I took a year of Spanish in school once. It was fun. Can't say I remembered much of it for my trip, though. That said, it wasn't that hard to figure things out when I was there. 
                 </p>
             </div>
-            <img src="" alt="" />
+            <img src="./assets/images/2019_07_CaminitoDelRey.jpg" alt="Caminito del Rey gorge walk" />
         </article>
     
         <!-- place three -->
-        <article>
-            <img src="" alt="" />
-            <div>
+        <article class="places">
+            <img src="./assets/images/Disneyworld.jpg" alt="Walt Disney Castle with Mickey and Walt statue in foreground" />
+            <div class="places-bio text-left">
                 <h3>Florida</h3>
                 <h4>Disneyworld, Daytona Beach, Coco Beach</h4>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quisquam corrupti voluptates est ducimus, magnam, veritatis enim incidunt fuga provident ex cumque aperiam ullam libero natus assumenda accusamus consectetur asperiores eveniet autem. Inventore error, odit cupiditate, eius ut aliquid recusandae numquam officia asperiores reprehenderit illo nihil mollitia placeat ipsam vero?
+                    Home. Ok, I wish. But it's as magical as it's made out to be.
                 </p>
             </div>
        </article>
     </section>
 
-<!-- "Currently In" section -->
-    <section>
-        <h2>Currently In</h2>
+<!-- "Currently Located" section -->
+    <section id="current-location" class="current">
+        <h2 class="section-title secondary-border">Currently Located</h2>
 
-        <div>
-            <iframe>
-
+        <div class="current-info">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186905.53562190192!2d-81.38870229723042!3d42.94879559751887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef20ea88d9b0b%3A0x28c7d7699a056b95!2sLondon%2C%20ON!5e0!3m2!1sen!2sca!4v1618691445789!5m2!1sen!2sca" 
+            width="600" height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">   
             </iframe>
+
             <div>
                 <h3>London, ON</h3>
                 <p>
@@ -155,7 +178,7 @@
                 </p>
                 <address>
                     4815 London Street <br />
-                    London, On <br />
+                    London, ON <br />
                     P: 481-516-2342 <br />
                     E: <a href="mailto:email">snelltravels@snelltravels.ca</a>
                 </address>
