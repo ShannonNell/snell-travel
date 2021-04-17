@@ -41,6 +41,90 @@ header nav ul li {
 }
 /* Header style end */
 
+.hero {
+    background-image: url("../images/DSC_0568-1.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-form {
+    border: solid 2px #264653;
+    background-color: #e76f51;
+    padding: 20px;
+    width: 450px;
+    position: absolute;
+    bottom: 110px;
+    right: 100px;
+}
+
+.hero-form h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.hero-form p {
+    margin: 5px 0 15px 0;
+}
+
+.form-input {
+    border: 1px solid #264653;
+    display: block;
+    font-size: 14px;
+    color: #264653;
+    width: 75%;
+    margin-bottom: 15px;
+    padding: 7px 15px;
+}
+
+.hero-form label {
+    margin: 0 5px;
+}
+
+.hero-form button {
+    background-color: #264653;
+    color: #e76f51;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+/* Hero style end */
+
+.about {
+    text-align: center;
+}
+.about p {
+    line-height: 1.5;
+    color: #2a9d8f;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.section-title {
+    font-size: 45px;
+    color: #264653;
+    background-color: #ffffff;
+    margin-bottom: 35px;
+    padding: 20px 100px 20px 100px;
+    display: inline-block;
+    border-bottom: 3px solid;
+}
+
+.primary-border {
+    border-color: #e76f51;
+}
+
+.secondary-border {
+    border-color: #264653;
+}
+
+
+
+
+
+
 /* Footer style */
 footer {
     background-color: #264653;

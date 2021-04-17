@@ -32,18 +32,36 @@
 <!-- Hero section -->
     <section class="hero">
         <div class="hero-form">
-            <h3>Your Travel Questions:</h3>
+            <h3>Travel Blog</h3>
+            <p>Fill out this form for some travel fun.</p>
             <!-- form -->
             <form>
-                Travel Form
+                <label for="name">Full name:</label>
+                <input type="text" placeholder="Your Name" name="name" id="name" class="form-input"/>
+                <label for="email">Email:</label>
+                <input type="text" placeholder="Email Address" name="email" id="email" class="form-input"/>
+                <label for="location">Where do you want to travel?</label>
+                <input type="text" placeholder="New Zealand" name="location" id="location" class="form-input"/>
+                <p>
+                    Where do you prefer to travel to?
+                    <input type="radio" name="location" id="beach" />
+                    <label for="beach">Beach</label>
+                    <input type="radio" name="location" id="mountains" />
+                    <label for="mountains">Mountains</label>
+                </p>
+                <p>
+                    <button type="submit">
+                        Get Adventuring!
+                    </button>
+                </p>
             </form>
         </div>
     </section>
 
 <!-- "About Me" section -->
-    <section id="about-me">
+    <section id="about-me" class="about">
         <div>
-            <h2>About Me</h2>
+            <h2 class="section-title primary-border">About Me</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis recusandae fuga eum optio a vitae maiores, voluptatem eveniet hic delectus, esse, veritatis porro sapiente debitis.
             </p>
@@ -55,7 +73,7 @@
         <h2>Ideal Adventures</h2>
 
         <div>
-            <img src="" alt="" />
+            <img src="./assets/images/Surfer.svg" alt="surfer" />
             <h3>Surfing: wherever there's water</h3>
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, recusandae?
@@ -63,7 +81,7 @@
         </div>
 
         <div>
-            <img src="" alt="" />
+            <img src="./assets/images/Hiker.svg" alt="hiker" />
             <h3>Hiking: coastal mountains preferably</h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptas reprehenderit dolor, ullam in sunt ipsum eaque autem neque repellendus a dolores, non debitis nulla?
@@ -71,7 +89,7 @@
         </div>
 
         <div>
-            <img src="" alt="" />
+            <img src="./assets/images/helicopter1.svg" alt="touring" />
             <h3>Tours: boating, helicoptor rides, city walks</h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ea quod quidem exercitationem deleniti suscipit veritatis totam sequi? Fuga neque, quod recusandae obcaecati ducimus vitae.
