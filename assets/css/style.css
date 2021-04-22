@@ -58,20 +58,19 @@ header nav ul li a {
 
 .hero {
     background-image: url("../images/DSC_0568-1.jpg");
-    height: 600px;
     background-size: cover;
     background-position: center;
-    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .hero-form {
     border: solid 2px #264653;
     background-color: #e76f51;
     padding: 20px;
-    width: 450px;
-    position: absolute;
-    bottom: 110px;
-    right: 100px;
+    width: 40%;
+    margin: 3.5%;
 }
 
 .hero-form h3 {
@@ -276,6 +275,9 @@ footer {
     background-color: #264653;
     padding: 40px 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 footer p {
