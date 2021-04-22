@@ -251,17 +251,17 @@ header nav ul li a {
     padding: 20px 20px 40px 20px;
 }
 
+.current-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .current-info iframe {
-    width: 400px;
     height: 400px;
 }
 
 .current-info div {
-    display: inline-block;
-    width: 410px;
-    vertical-align: top;
-    text-align: left;
-    margin: 70px 0 0 60px;
     color: #264653;
 }
 
@@ -280,6 +280,34 @@ header nav ul li a {
 
 .current-info a {
     color: #e9c46a;
+    text-decoration: none;
+}
+
+.current-info > * {
+    flex: 1;
+    margin: 15px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    border: 1px solid #264653;
+    display: block;
+    padding: 7px 15px;
+    font-size: 14px;
+    color: #2a9d8f;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: #e9c46a;
+    color: #264653;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
 }
 /* currently located style end */
 
