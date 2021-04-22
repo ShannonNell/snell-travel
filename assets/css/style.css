@@ -50,7 +50,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    margin: 0 30px;
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 18px;
 }
@@ -63,6 +63,7 @@ header nav ul li a {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .hero-form {
@@ -106,8 +107,8 @@ header nav ul li a {
 /* Hero style end */
 
 /* About me style */
-.about div {
-    margin-bottom: 30px;
+.about div p {
+    margin-bottom: 20px;
 }
 
 .about p {
@@ -208,6 +209,10 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 18px;
     margin-bottom: 10px;
+}
+
+.places-bio p {
+    font-style: 16px;
 }
 
 /* places I've been style end */
@@ -328,3 +333,138 @@ footer p {
     text-align: center;
 }
 /* Footer style end */
+
+
+/* MEDIA QUERY small desktop and smaller */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 15px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 24px;
+    }
+
+    .hero-form {
+        width: 50%;
+    }
+
+    .section-title {
+        width: 70%;
+    }
+
+    .about p {
+        width: 65%;
+    }
+
+    .step h3 {
+        flex: 1 15%;
+    }
+
+    .places {
+        flex: 0 60%;
+    }
+
+    .places-bio h3 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .places-bio h4 {
+        font-size: 30px;
+    }
+    .places-bio p {
+        font-size: 26px;
+    }
+
+    .current-info iframe {
+        flex: 1 100%;
+    }
+
+    footer {
+        font-size: 26px;
+    }
+}
+  
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    .hero-form {
+        width: 65%;
+    }
+    section {
+        padding: 30px 15px;
+    }
+
+    .about p {
+        width: 75%;
+    }
+
+    .step h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+
+    .step-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .step-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .step-text {
+        flex: 100%;
+        text-align: center;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .hero-form {
+        width: 100%;
+    }
+    .hero-form button {
+        width: 100%;
+    }
+
+    .section-title {
+        width: 75%;
+    }
+
+    .about p {
+        width: 100%;;
+    }
+
+    .places {
+        flex: 0 100%;
+    }
+
+    .current-info {
+        text-align: center;
+    }
+
+    .current-info > * {
+        flex: 0 100%;
+    }
+
+    .contact-form {
+        order: 3;
+    }
+}
