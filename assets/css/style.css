@@ -12,21 +12,23 @@ body {
 /* Header style */
 header {
     background-color: #264653;
-    padding: 20px;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header h1 {
     font-size: 30px;
     font-weight: lighter;
     color: #e76f51;
-    display: inline;
     margin: 0;
 }
 
 header img {
-    width: 2.5%;
     margin: 0 5px;
     position: bottom;
+    width: 25px;
 }
 
 header a {
@@ -35,12 +37,19 @@ header a {
 }
 
 header nav {
-    float: right;
     margin: 7px 0;
 }
 
-header nav ul li {
-    display: inline;
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-weight: lighter
+}
+
+header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 18px;
