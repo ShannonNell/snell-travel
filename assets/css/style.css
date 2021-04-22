@@ -106,67 +106,73 @@ header nav ul li a {
 /* Hero style end */
 
 /* About me style */
-.about {
-    text-align: center;
-}
-
 .about div {
     margin-bottom: 30px;
 }
+
 .about p {
     line-height: 1.5;
     color: #2a9d8f;
     width: 45%;
     margin: 0 auto;
     font-size: 20px;
+    text-align: center;
 }
 /* about me style end */
 
 /* ideal adventures style */
 .adventures {
-    text-align: center;
     background: #264653;
-    padding-bottom: 20px;
 }
 
 .adventures h2 {
     color: #e76f51;
 }
 
-.adventures div {
-    margin-bottom: 25px;
+.step {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #e9c46a;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.adventures img {
-    width: 15%;
-    margin: 5px 0;
-}
-
-.adventures h3 {
+.step h3 {
     color: #e76f51;
     font-size: 30px;
-    margin: 10px 0;
     font-weight: lighter;
+    flex: 1 30%;
 }
 
-.adventures p {
+.step-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.step-img {
+    flex: 1 12%;
+    margin-right: 20px;
+}
+.step-img img {
+    max-width: 100%;
+}
+
+.step-text {
     color: #2a9d8f;
     font-size: 20px;
-    width: 60%;
-    display: inline-block;
     line-height: 1.5;
     text-align: justify;
+    flex: 12;
 }
 
-.adventures span {
-    font-size: 25px;
-}
 /* ideal adventures style end */
 
 /* places I've been style */
-.places-been {
-    text-align: center;
-}
 
 .places {
     width: 75%;
@@ -206,10 +212,11 @@ header nav ul li a {
     font-size: 45px;
     font-weight: lighter;
     color: #264653;
-    margin-bottom: 35px;
-    padding: 20px 100px 20px 100px;
-    display: inline-block;
     border-bottom: 3px solid;
+    padding: 20px 0;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
 }
 
 .primary-border {
@@ -227,12 +234,15 @@ header nav ul li a {
 .text-right {
     text-align: right;
 }
+
+.flex-row {
+    display: flex;
+}
 /* utility classes end */
 
 /* currently located style */
 .current {
     background: #e76f51;
-    text-align: center;
     padding: 20px 20px 40px 20px;
 }
 
