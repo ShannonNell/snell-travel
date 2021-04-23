@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>snellTravels</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="shortcut icon" type="image/png" href="./assets/images/snellSnail-white.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
@@ -21,13 +20,13 @@
                     <a href="#about-me">About Me</a>
                 </li>
                 <li>
-                    <a href="#ideal-adventures">Ideal Adventures</a>
+                    <a href="#ideal-adventures">Adventures</a>
                 </li>
                 <li>
-                    <a href="#places-ive-been">Places I've Been</a>
+                    <a href="#places-ive-been">Places</a>
                 </li>
                 <li>
-                    <a href="#current-location">Currently Located</a>
+                    <a href="#current-location">Currently</a>
                 </li>
             </ul>
         </nav>
@@ -47,7 +46,7 @@
                 <label for="location">Where do you want to travel?</label>
                 <input type="text" placeholder="New Zealand" name="location" id="location" class="form-input"/>
                 <p>
-                    Where do you prefer to travel to?
+                    Which is better?
                     <input type="radio" name="location" id="beach" />
                     <label for="beach">Beach</label>
                     <input type="radio" name="location" id="mountains" />
@@ -65,95 +64,126 @@
 <!-- "About Me" section -->
     <section id="about-me" class="about">
         <div>
-            <h2 class="section-title primary-border">About Me</h2>
-            <p>
-                Aloha! Shannon is the name and travelling is the game. 
-                Unfortunately right now, the travel game is not afoot -dang COVID. 
-                But you can bet your bottom dollar that tomorrow, there'll be travel.
-                And as soon as I can, I'll be there. 
-                <br />
-                Iceland. Vancouver. Oregon. New Zealand. Faroe Islands. Zhangjiajie's Mountains. 
+            <div class="flex-row">
+                <h2 class="section-title primary-border">About Me</h2>
+            </div>
+            <div class="flex-row">
+                <p>
+                    Aloha! Shannon is the name and travelling is the game. 
+                    Unfortunately right now, the travel game is not afoot -dang COVID. 
+                    But you can bet your bottom dollar that tomorrow, there'll be travel.
+                    And as soon as I can, I'll be there. 
+                    <br />
+                    Iceland. Vancouver. Oregon. New Zealand. Faroe Islands. Zhangjiajie's Mountains. 
 
-                Is everywhere an option?
-            </p>
+                    Is everywhere an option?
+                </p>
+            </div>
         </div>
     </section>
 
 <!-- "Ideal Adventures" section -->
     <section id="ideal-adventures" class="adventures">
-        <h2 class="section-title secondary-border">Ideal Adventures</h2>
-
-        <div>
-            <img src="./assets/images/Surfer.svg" alt="surfer" />
-            <h3>Surfing: <span>wherever there's water</span></h3>
-            <p>
-                Surfing is a passion of mine. 
-                Or it would be if I lived by the ocean. 
-                For now I'm just a wannabe surfer and if I ever get the chance, I take it.
-            </p>
+        <div class="flex-row">
+            <h2 class="section-title secondary-border">Ideal Adventures</h2>
         </div>
 
-        <div>
-            <img src="./assets/images/Hiker.svg" alt="hiker" />
-            <h3>Hiking: <span>coastal mountains preferably</span></h3>
-            <p>
-                I used to hate hiking but have finally come to appreciate it. 
-                Having a camera and seeing the beauty of the world through a new 'lens' helped me appreciate it all the more. 
-                But maybe don't ask me to hike all day without access to some sort of waterfront.
-            </p>
+        <div class="step">
+            <div class="step-info">
+                <h3>Surfing:</h3>
+                <div class="step-img">
+                    <img src="./assets/images/Surfer.svg" alt="surfer" />
+                </div>
+                <div class="step-text">
+                    <h4>Wherever there's water</h4>
+                    <p>
+                        Surfing is a passion of mine.
+                        Or it would be if I lived by the ocean.
+                        For now I'm just a wannabe surfer and if I ever get the chance, I take it.
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <img src="./assets/images/helicopter1.svg" alt="touring" />
-            <h3>Tours: <span>boating, helicoptor rides, city walks</span></h3>
-            <p>
-                Tours have their ups and downs but I choose to focus on the good! 
-                Sometimes the tourguide is simply a great resource of information.
-                Other times they take you to remote locations you wouldn't be able to access on your own.
-                They teach you things, and if you can get a good group, it can be a blast!
-            </p>
+        <div class="step">
+            <div class="step-info">
+                <h3>Hiking:</h3>
+                <div class="step-img">
+                    <img src="./assets/images/Hiker.svg" alt="hiker" />
+                </div>
+                <div class="step-text">
+                    <h4>Coastal mountains preferably</h4>
+                    <p>
+                        I used to hate hiking but have finally come to appreciate it. 
+                        Having a camera and seeing the beauty of the world through a new 'lens' helped me appreciate it all the more. 
+                        But maybe don't ask me to hike all day without access to some sort of waterfront.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-info">
+                <h3>Tours:</h3>
+                <div class="step-img">
+                    <img src="./assets/images/helicopter1.svg" alt="touring" />
+                </div>
+                <div class="step-text">
+                    <h4>Boating, helicoptor rides, city walks</h4>
+                    <p>
+                        Tours have their ups and downs but I choose to focus on the good! 
+                        Sometimes the tourguide is simply a great resource of information.
+                        Other times they take you to remote locations you wouldn't be able to access on your own.
+                        They teach you things, and if you can get a good group, it can be a blast!
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
 <!-- "Places I've Been" section -->
-    <section id="places-ive-been" class="places-been">
-        <h2 class="section-title primary-border">Places I've Been</h2>
-        
-        <!-- place one -->
-        <article class="places">
-            <img src="./assets/images/2019_07_September_Portugal79.jpg" alt="Coastal view of Lagos beach, Portugal" />
-            <div class="places-bio text-left">
-                <h3>Portugal</h3>
-                <h4>Lisbon, Lagos, Sintra</h4>
-                <p>
-                    Ah Portugal. Coastal views, warm days, and many castles. What more could someone want? 
-                </p>
-            </div>  
-        </article>
+    <section id="places-ive-been">
+        <div class="flex-row">
+            <h2 class="section-title primary-border">Places I've Been</h2>
+        </div>
 
-        <!-- place two -->
-        <article class="places">
-            <div class="places-bio text-right">
-                <h3>Spain</h3>
-                <h4>Malaga, Ronda, Caminito del Rey</h4>
-                <p>
-                    I took a year of Spanish in school once. It was fun. Can't say I remembered much of it for my trip, though. That said, it wasn't that hard to figure things out when I was there. 
-                </p>
-            </div>
-            <img src="./assets/images/2019_07_CaminitoDelRey.jpg" alt="Caminito del Rey gorge walk" />
-        </article>
-    
-        <!-- place three -->
-        <article class="places">
-            <img src="./assets/images/Disneyworld.jpg" alt="Walt Disney Castle with Mickey and Walt statue in foreground" />
-            <div class="places-bio text-left">
-                <h3>Florida</h3>
-                <h4>Disneyworld, Daytona Beach, Coco Beach</h4>
-                <p>
-                    Home. Ok, I wish. But it's as magical as it's made out to be.
-                </p>
-            </div>
-       </article>
+        <div class="places-been">
+            <!-- place one -->
+            <article class="places">
+                <img src="./assets/images/2019_07_September_Portugal79.jpg" alt="Coastal view of Lagos beach, Portugal" />
+                <div class="places-bio">
+                    <h3 class="places-name">Portugal</h3>
+                    <h4 class="places-location">Lisbon, Lagos, Sintra</h4>
+                    <p>
+                        Ah Portugal. Coastal views, warm days, and many castles. What more could someone want? 
+                    </p>
+                </div>  
+            </article>
+
+            <!-- place two -->
+            <article class="places">
+                <img src="./assets/images/2019_07_CaminitoDelRey.jpg" alt="Caminito del Rey gorge walk" />
+                <div class="places-bio">
+                    <h3 class="places-name">Spain</h3>
+                    <h4 class="places-location">Malaga, Ronda, Caminito del Rey</h4>
+                    <p>
+                        I took a year of Spanish in school once. It was fun. Can't say I remembered much of it for my trip, though. That said, it wasn't that hard to figure things out when I was there. 
+                    </p>
+                </div>
+            </article>
+        
+            <!-- place three -->
+            <article class="places">
+                <img src="./assets/images/Disneyworld.jpg" alt="Walt Disney Castle with Mickey and Walt statue in foreground" />
+                <div class="places-bio">
+                    <h3 class="places-name">Florida</h3>
+                    <h4 class="places-location">Disneyworld, Daytona Beach, Coco Beach</h4>
+                    <p>
+                        Home. Ok, I wish. But it's as magical as it's made out to be.
+                    </p>
+                </div>
+            </article>
+        </div>
     </section>
 
 <!-- "Currently Located" section -->
@@ -161,14 +191,6 @@
         <h2 class="section-title secondary-border">Currently Located</h2>
 
         <div class="current-info">
-            <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186905.53562190192!2d-81.38870229723042!3d42.94879559751887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef20ea88d9b0b%3A0x28c7d7699a056b95!2sLondon%2C%20ON!5e0!3m2!1sen!2sca!4v1618691445789!5m2!1sen!2sca" 
-            width="600" height="450" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy">   
-            </iframe>
-
             <div>
                 <h3>London, ON</h3>
                 <p>
@@ -183,6 +205,27 @@
                     E: <a href="mailto:email">snelltravels@snelltravels.ca</a>
                 </address>
             </div>
+
+            <div class="contact-form">
+                <h3>Want to chat?</h3>
+                <form>
+                    <label for="contact-name">Your Name</label>
+                    <input type="text" id="contact-name" placeholder="What can I call you?" />
+
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" placeholder="Write me a note."></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186905.53562190192!2d-81.38870229723042!3d42.94879559751887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef20ea88d9b0b%3A0x28c7d7699a056b95!2sLondon%2C%20ON!5e0!3m2!1sen!2sca!4v1618691445789!5m2!1sen!2sca" 
+            width="600" height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">   
+            </iframe>
        </div>
     </section>
 
