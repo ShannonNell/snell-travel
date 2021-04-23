@@ -1,3 +1,10 @@
+:root {
+    --dark: #264653;
+    --orange: #e76f51;
+    --jungle-green: #2a9d8f;
+    --golden-sand: #e9c46a;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,26 +13,23 @@
 
 body {
     font-family: helvetica, Arial, sans-serif;
-    color: #264653;
+    color: var(--dark);
 }
 
 /* Header style */
 header {
-    background-color: #264653;
-    background-position: center;
+    background-color: var(--dark);
     padding: 20px 35px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
 }
 
 header h1 {
     font-size: 30px;
     font-weight: lighter;
-    color: #e76f51;
+    color: var(--orange);
     margin: 0;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.40);
 }
@@ -38,7 +42,7 @@ header img {
 
 header a {
     text-decoration: none;
-    color: #e76f51;
+    color: var(--orange);
 }
 
 header nav {
@@ -62,8 +66,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background:#2a9d8f;
-    color: #264653;
+    background:var(--jungle-green);
+    color: var(--dark);
     border-radius: 15px;
     text-shadow: none;
 }
@@ -80,7 +84,7 @@ header nav ul li a:hover {
 }
 
 .hero-form {
-    border: solid 2px #264653;
+    border: solid 2px var(--dark);
     background-color: rgba(231, 111, 81, .85);
     padding: 20px;
     width: 40%;
@@ -98,10 +102,10 @@ header nav ul li a:hover {
 }
 
 .form-input {
-    border: 1px solid #264653;
+    border: 1px solid var(--dark);
     display: block;
     font-size: 14px;
-    color: #264653;
+    color: var(--dark);
     width: 75%;
     margin-bottom: 15px;
     padding: 7px 15px;
@@ -119,8 +123,8 @@ header nav ul li a:hover {
 }
 
 .hero-form button {
-    background-color: #264653;
-    color: #e76f51;
+    background-color: var(--dark);
+    color: var(--orange);
     border: none;
     padding: 10px 20px;
     font-size: 14px;
@@ -128,8 +132,8 @@ header nav ul li a:hover {
 }
 
 .hero-form button:hover {
-    background-color:#2a9d8f;
-    color:#264653;
+    background-color:var(--jungle-green);
+    color:var(--dark);
 }
 /* Hero style end */
 
@@ -140,7 +144,7 @@ header nav ul li a:hover {
 
 .about p {
     line-height: 1.5;
-    color: #2a9d8f;
+    color: var(--jungle-green);
     width: 45%;
     margin: 0 auto;
     font-size: 20px;
@@ -150,18 +154,18 @@ header nav ul li a:hover {
 
 /* ideal adventures style */
 .adventures {
-    background: #264653;
+    background: var(--dark);
 }
 
 .adventures h2 {
-    color: #e76f51;
+    color: var(--orange);
 }
 
 .step {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #e9c46a;
+    border-bottom: 1px solid var(--golden-sand);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -169,14 +173,14 @@ header nav ul li a:hover {
 }
 
 .step h3 {
-    color: #e76f51;
-    font-size: 30px;
+    color: var(--orange);
+    font-size: 34px;
     font-weight: lighter;
-    flex: 1 30%;
+    flex: 1 10%;
 }
 
 .step-info {
-    flex: 2 70%;
+    flex: 2 90%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -191,7 +195,7 @@ header nav ul li a:hover {
 }
 
 .step-text {
-    color: #2a9d8f;
+    color: var(--jungle-green);
     font-size: 20px;
     line-height: 1.5;
     text-align: justify;
@@ -211,8 +215,8 @@ header nav ul li a:hover {
 }
 
 .places {
-    background: #2a9d8f;
-    color: #264653;
+    background: var(--jungle-green);
+    color: var(--dark);
     margin: 20px;
     flex: 1;
     border-radius: 15px;
@@ -250,7 +254,7 @@ header nav ul li a:hover {
 .section-title {
     font-size: 45px;
     font-weight: lighter;
-    color: #264653;
+    color: var(--dark);
     border-bottom: 3px solid;
     padding: 20px 0;
     text-align: center;
@@ -259,11 +263,11 @@ header nav ul li a:hover {
 }
 
 .primary-border {
-    border-color: #e76f51;
+    border-color: var(--orange);
 }
 
 .secondary-border {
-    border-color: #2a9d8f;
+    border-color: var(--jungle-green);
 }
 
 .text-left {
@@ -281,7 +285,7 @@ header nav ul li a:hover {
 
 /* currently located style */
 .current {
-    background: #e76f51;
+    background: var(--orange);
     padding: 20px 20px 40px 20px;
 }
 
@@ -296,7 +300,7 @@ header nav ul li a:hover {
 }
 
 .current-info div {
-    color: #264653;
+    color: var(--dark);
 }
 
 .current-info h3 {
@@ -313,7 +317,7 @@ header nav ul li a:hover {
 }
 
 .current-info a {
-    color: #e9c46a;
+    color: var(--golden-sand);
     text-decoration: none;
 }
 
@@ -324,11 +328,11 @@ header nav ul li a:hover {
 
 .contact-form input, 
 .contact-form textarea {
-    border: 1px solid #264653;
+    border: 1px solid var(--dark);
     display: block;
     padding: 7px 15px;
     font-size: 14px;
-    color: #2a9d8f;
+    color: var(--jungle-green);
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
@@ -345,8 +349,8 @@ header nav ul li a:hover {
 .contact-form button {
     width: 100%;
     border: none;
-    background: #e9c46a;
-    color: #264653;
+    background: var(--golden-sand);
+    color: var(--dark);
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
@@ -354,8 +358,8 @@ header nav ul li a:hover {
 }
 
 .contact-form button:hover {
-    background:#264653;
-    color:#e9c46a;
+    background:var(--dark);
+    color:var(--golden-sand);
 }
 /* currently located style end */
 
@@ -363,7 +367,7 @@ header nav ul li a:hover {
 
 /* Footer style */
 footer {
-    background-color: #264653;
+    background-color: var(--dark);
     padding: 40px 0;
     width: 100%;
     display: flex;
@@ -372,7 +376,7 @@ footer {
 }
 
 footer p {
-    color: #e76f51;
+    color: var(--orange);
     text-align: center;
 }
 /* Footer style end */
@@ -484,7 +488,9 @@ footer p {
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-
+    header nav ul li {
+        padding: 10px 0;
+    }
 
     .hero-form {
         width: 100%;
